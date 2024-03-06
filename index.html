@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Simplotel Assignment</title>
+</head>
+
+<body>
+    <!-- desktop and tab navbar -->
+    <div class="navigation">
+        <ul class="navbar">
+            <li class="unordered-li"><a href="#Home">Home</a></li>
+            <li class="unordered-li"><a href="#Order">Order</a></li>
+            <li class="unordered-li"><a href="#Food">Food</a></li>
+            <li class="unordered-li"><a href="#Restaurant">Restaurant</a></li>
+            <li class="unordered-li"><a href="#Testimonials">Testimonials</a></li>
+            <li class="unordered-li"><a href="#ContactUs">Contact US</a></li>
+            <li class="list-image">
+                <img class="nav-bar-image" src="public/menu-bar.png" alt="Menu Bar" onclick="myFunction()" />
+            </li>
+        </ul>
+    </div>
+    <!-- Mobile navbar -->
+    <div class="nav" id="myNav">
+        <a href="#" class="active">Home</a>
+        <a href="#" class="active">Order</a>
+        <a href="#" class="active">Food</a>
+        <a href="#" class="active">Restaurant</a>
+        <a href="#" class="active">Testimonails</a>
+        <a href="#" class="active">Contact Us</a>
+    </div>
+    <!-- App top section -->
+    <div class="top-section-container">
+        <div class="top-text-container">
+            <h1 class="top-section-heading">LOREM IPSUM</h1>
+            <p class="top-section-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus id est vitae dolor rhoncus
+                tristique.Maecenas metus quam,
+                quam,rhoncus euismod lorem in, sollicitudin viverra eros.Donec dictum luctus quam ut tristique.
+                Curabitur nec faucibus purus.
+                Quisque congue sem nec justo mollis, in tincidunt erat pretium Sed pulvinar, massa ac porta viverra.
+            </p>
+            <button class="Click-me-button" type="button">Click Me</button>
+        </div>
+        <div class="top-image-container">
+            <img class="top-section-image" src="public/pexels-robin-stickel-70497.jpg" alt="Burger Image" />
+        </div>
+    </div>
+    <br />
+    <!-- App bottom section -->
+    <div class="bottom-section-container">
+        <div class="bottom-section-images-container">
+            <div class="bottom-section-two-images">
+                <img src="public/pexels-rachel-claire-6752433.jpg" class="image-1" alt="image 1" />
+                <img src="public/pexels-eva-bronzini-6141651.jpg" class="image-1" alt="Image 2" />
+            </div>
+            <img src="public/pexels-mister-mister-3434523.jpg" class="image-2" alt="Image 3" />
+        </div>
+        <div class="bottom-section-text-container">
+            <div>
+                <p class="bottom-section-title">LOREM IPSUM</p>
+                <h1 class="bottom-section-heading">LOREM IPSUM SET ADEMIR</h1>
+            </div>
+            <div class="arrow-click-container">
+                <p class="click-heading">Click</p>
+                <img src="public/icons8-arrow-30.png" class="right-arrow-image" alt="Arrow Icon" />
+            </div>
+        </div>
+    </div>
+    <script>
+        // toggle mobile navigation handler 
+        function myFunction() {
+            var x = document.getElementById("myNav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+</body>
+
+</html>
